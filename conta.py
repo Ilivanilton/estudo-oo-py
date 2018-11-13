@@ -9,6 +9,9 @@ class Conta:
         self.__saldo = valor
         self.__limite = 500.0
 
+    def txt(self):
+        print(f'Nome: {self.titular} Saldo: {self.saldo}')
+
     @property
     def titular(self):
         return self.__titular
@@ -28,6 +31,11 @@ class Conta:
     @staticmethod
     def codigo_banco():
         return "001"
+
+    @staticmethod
+    def codigos_bancos():
+        return {'BB':'001', 'Caixa':'104', 'Bradesco':'237'}
+
 
     def __pode_sacar(self, valor):
         return valor <= (self.__saldo + self.__limite)
