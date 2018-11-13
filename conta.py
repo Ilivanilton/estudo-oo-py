@@ -8,7 +8,6 @@ class Conta:
         self.__titular = nome
         self.__saldo = valor
         self.__limite = 500.0
-        self.__codigo_banco = "001"
 
     @property
     def titular(self):
@@ -46,7 +45,6 @@ class Conta:
         if self.__pode_sacar(valor):
             self.__saldo -= valor
             return True
-
         print("Saldo insuficiente")
         return False
 
