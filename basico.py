@@ -17,6 +17,7 @@ print( (r"c:\numer") *2 )
 name = "ilivanlton"
 print(name[2])
 print(name[0:2])
+print('Seu saldo é %s' % 12)
 
 #lista []
 #recebe qualquer dado
@@ -50,11 +51,13 @@ accounts = {
         'pass':2343
     }
 }
-if acc in accounts and acc == accounts[acc]['pass']
+
+if acc in accounts and acc == accounts[acc]['pass']:
     print('Conta valida')
 else:
     print('Conta invalida')
 
+print('verdade' if True else 'falso')
 
 #for
 print("------------#for-----------------")
