@@ -40,6 +40,22 @@ elif total < 100:
 else:
     print("opss")
 
+acc = '00-23'
+pas = 2343
+accounts = {
+    '00-23':{
+        'pass':2343
+    },
+    '00-24':{
+        'pass':2343
+    }
+}
+if acc in accounts and acc == accounts[acc]['pass']
+    print('Conta valida')
+else:
+    print('Conta invalida')
+
+
 #for
 print("------------#for-----------------")
 lista = [2, 4, 6, 8, 10]
